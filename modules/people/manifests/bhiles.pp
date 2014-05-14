@@ -31,4 +31,5 @@ class people::bhiles {
   }
   include postgresql
   include zsh_notifier
+  include slack
 }
