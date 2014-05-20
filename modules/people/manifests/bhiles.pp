@@ -34,4 +34,5 @@ class people::bhiles {
   include slack
   include graphviz
   include toggl
+  include googlevoiceandvideoplugin
 }
