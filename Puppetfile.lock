@@ -199,6 +199,11 @@ GITHUBTARBALL
     textwrangler (1.0.5)
 
 GITHUBTARBALL
+  remote: boxen/puppet-toggl
+  specs:
+    toggl (1.0.4)
+
+GITHUBTARBALL
   remote: boxen/puppet-vagrant
   specs:
     vagrant (3.0.7)
@@ -288,6 +293,7 @@ DEPENDENCIES
   sysctl (= 1.0.1)
   textwrangler (= 1.0.5)
   tiny_alarm (= 1.0.0)
+  toggl (= 1.0.4)
   vagrant (= 3.0.7)
   virtualbox (= 1.0.11)
   wget (= 1.0.1)

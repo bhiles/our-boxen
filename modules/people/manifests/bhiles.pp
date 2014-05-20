@@ -33,4 +33,5 @@ class people::bhiles {
   include zsh_notifier
   include slack
   include graphviz
+  include toggl
 }
