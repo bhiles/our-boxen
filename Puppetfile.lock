@@ -79,6 +79,11 @@ GITHUBTARBALL
     go (1.1.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-graphviz
+  specs:
+    graphviz (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-homebrew
   specs:
     homebrew (1.9.2)
@@ -122,6 +127,11 @@ GITHUBTARBALL
   remote: boxen/puppet-osx
   specs:
     osx (2.2.2)
+
+GITHUBTARBALL
+  remote: boxen/puppet-pcre
+  specs:
+    pcre (1.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-phantomjs
@@ -172,6 +182,11 @@ GITHUBTARBALL
   remote: boxen/puppet-sudo
   specs:
     sudo (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-swig
+  specs:
+    swig (1.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-sysctl
@@ -243,6 +258,7 @@ DEPENDENCIES
   gimp (= 1.0.1)
   git (= 2.3.1)
   go (= 1.1.0)
+  graphviz (= 1.0.0)
   homebrew (= 1.9.2)
   hub (= 1.3.0)
   inifile (= 1.0.3)
@@ -255,7 +271,9 @@ DEPENDENCIES
   onepassword (= 1.1.0)
   openssl (= 1.0.0)
   osx (= 2.2.2)
+  pcre (= 1.0.0)
   phantomjs (= 2.3.0)
+  pkgconfig (= 1.0.0)
   pkgconfig (= 1.0.0)
   postgresql (= 2.2.3)
   quicksilver (= 1.3.0)
@@ -266,6 +284,7 @@ DEPENDENCIES
   slack (= 1.0.5)
   stdlib (= 4.1.0)
   sudo (= 1.0.0)
+  swig (= 1.0.0)
   sysctl (= 1.0.1)
   textwrangler (= 1.0.5)
   tiny_alarm (= 1.0.0)
