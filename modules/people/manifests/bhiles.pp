@@ -35,4 +35,7 @@ class people::bhiles {
   include graphviz
   include toggl
   include googlevoiceandvideoplugin
+  include libreoffice
+  include emacs
+  include fluid
 }
