@@ -1,6 +1,6 @@
 class people::bhiles {
   include chrome
-  include onepassword
+  #include onepassword
   include dropbox
   include textwrangler
   include adium
@@ -25,13 +25,13 @@ class people::bhiles {
   include tiny_alarm
   include vagrant
   include postgresql
-  include zsh_notifier
+  #include zsh_notifier
   include slack
   include graphviz
   include googlevoiceandvideoplugin
-  include libreoffice
+  #include libreoffice
   include emacs
-  include fluid
+  #include fluid
   include s3cmd
   include docker
   include dash
@@ -40,6 +40,6 @@ class people::bhiles {
   include zeromq
   include libtool
   include memcached
-  include memcached::lib
+  #include memcached::lib
   include phantomjs::1_9_0
 }
