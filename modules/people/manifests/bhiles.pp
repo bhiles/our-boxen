@@ -1,45 +1,52 @@
 class people::bhiles {
+
+  # basic applications
   include chrome
+  include googlevoiceandvideoplugin
   include onepassword
   include dropbox
   include textwrangler
   include adium
   include quicksilver
   include divvy
-  include virtualbox
-  include wget
   include skype
   include rdio
   include caffeine
-  include macvim
   include gimp
-  include zsh
-  include ohmyzsh
   include adobe_reader
-  include osx::global::disable_remote_control_ir_receiver
-  include osx::dock::autohide
-  include osx::dock::clear_dock
-  include osx::dock::dim_hidden_apps
+  include toggl
+  include fluid
+  include tiny_alarm
+  include graphviz
+  include libreoffice
+
+  # developer applications
+  include zsh
   include java
   include clojure
-  include tiny_alarm
-  include vagrant
-  include postgresql
-  #include zsh_notifier
-  include graphviz
-  include googlevoiceandvideoplugin
-  include libreoffice
   include emacs
-  include fluid
+  include wget
   include s3cmd
+  include linkinus
+  include virtualbox
+  include vagrant
   include docker
   include dash
-  include linkinus
   include maven
   include zeromq
   include libtool
   include memcached
   #include memcached::lib skipping bc of trouble on latest Mavericks
   include phantomjs::1_9_0
-  include toggl
+  include postgresql
+  #include zsh_notifier
+  include macvim
+  include ohmyzsh
+
+  # configurations
+  include osx::global::disable_remote_control_ir_receiver
+  include osx::dock::autohide
+  include osx::dock::clear_dock
+  include osx::dock::dim_hidden_apps
+
 }
