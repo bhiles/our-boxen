@@ -33,9 +33,18 @@ class people::bhiles {
   include zsh_notifier
   include slack
   include graphviz
-  include toggl
   include googlevoiceandvideoplugin
   include libreoffice
   include emacs
   include fluid
+  include s3cmd
+  include docker
+  include dash
+  include linkinus
+  include maven
+  include zeromq
+  include libtool
+  include memcached
+  include memcached::lib
+  include phantomjs::1_9_0
 }

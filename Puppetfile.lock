@@ -4,6 +4,16 @@ GITHUBTARBALL
     libreoffice (4.1.6)
 
 GITHUBTARBALL
+  remote: bhiles/puppet-maven
+  specs:
+    maven (1.0.13)
+
+GITHUBTARBALL
+  remote: bhiles/puppet-s3cmd
+  specs:
+    s3cmd (0.0.1)
+
+GITHUBTARBALL
   remote: bhiles/puppet-tiny_alarm
   specs:
     tiny_alarm (1.0.0)
@@ -42,6 +52,11 @@ GITHUBTARBALL
   remote: boxen/puppet-clojure
   specs:
     clojure (1.2.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-dash
+  specs:
+    dash (1.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-divvy
@@ -114,9 +129,24 @@ GITHUBTARBALL
     java (1.5.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-libtool
+  specs:
+    libtool (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-linkinus
+  specs:
+    linkinus (1.0.3)
+
+GITHUBTARBALL
   remote: boxen/puppet-macvim
   specs:
     macvim (1.0.0)
+
+GITHUBTARBALL
+  remote: boxen/puppet-memcached
+  specs:
+    memcached (2.0.0)
 
 GITHUBTARBALL
   remote: boxen/puppet-nginx
@@ -214,14 +244,9 @@ GITHUBTARBALL
     textwrangler (1.0.5)
 
 GITHUBTARBALL
-  remote: boxen/puppet-toggl
-  specs:
-    toggl (1.0.4)
-
-GITHUBTARBALL
   remote: boxen/puppet-vagrant
   specs:
-    vagrant (3.0.7)
+    vagrant (3.0.9)
 
 GITHUBTARBALL
   remote: boxen/puppet-virtualbox
@@ -239,6 +264,11 @@ GITHUBTARBALL
     xquartz (1.1.1)
 
 GITHUBTARBALL
+  remote: boxen/puppet-zeromq
+  specs:
+    zeromq (1.0.0)
+
+GITHUBTARBALL
   remote: boxen/puppet-zsh
   specs:
     zsh (1.0.0)
@@ -247,6 +277,11 @@ GITHUBTARBALL
   remote: erivello/puppet-ohmyzsh
   specs:
     ohmyzsh (1.0.0)
+
+GITHUBTARBALL
+  remote: morgante/puppet-docker
+  specs:
+    docker (1.0.3)
 
 GITHUBTARBALL
   remote: phase2/puppet-googlevoiceandvideoplugin
@@ -275,8 +310,10 @@ DEPENDENCIES
   caffeine (= 1.0.0)
   chrome (= 1.1.2)
   clojure (= 1.2.0)
+  dash (= 1.0.0)
   divvy (= 1.0.1)
   dnsmasq (= 1.0.1)
+  docker (= 1.0.3)
   dropbox (= 1.2.0)
   emacs (= 1.3.0)
   fluid (= 1.0.1)
@@ -292,7 +329,11 @@ DEPENDENCIES
   inifile (= 1.0.3)
   java (= 1.5.0)
   libreoffice (= 4.1.6)
+  libtool (= 1.0.0)
+  linkinus (= 1.0.3)
   macvim (= 1.0.0)
+  maven (= 1.0.13)
+  memcached (= 2.0.0)
   module-data (= 0.0.3)
   nginx (= 1.4.3)
   nodejs (= 3.7.0)
@@ -302,6 +343,7 @@ DEPENDENCIES
   osx (= 2.2.2)
   pcre (= 1.0.0)
   phantomjs (= 2.3.0)
+  phantomjs (= 2.3.0)
   pkgconfig (= 1.0.0)
   pkgconfig (= 1.0.0)
   postgresql (= 2.2.3)
@@ -309,6 +351,7 @@ DEPENDENCIES
   rdio (= 1.0.0)
   repository (= 2.3.0)
   ruby (= 7.3.0)
+  s3cmd (= 0.0.1)
   skype (= 1.0.8)
   slack (= 1.0.5)
   stdlib (= 4.1.0)
@@ -317,11 +360,11 @@ DEPENDENCIES
   sysctl (= 1.0.1)
   textwrangler (= 1.0.5)
   tiny_alarm (= 1.0.0)
-  toggl (= 1.0.4)
-  vagrant (= 3.0.7)
+  vagrant (= 3.0.9)
   virtualbox (= 1.0.11)
   wget (= 1.0.1)
   xquartz (= 1.1.1)
+  zeromq (= 1.0.0)
   zsh (= 1.0.0)
   zsh_notifier (= 0.0.14)
 
