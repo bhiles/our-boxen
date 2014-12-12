@@ -28,6 +28,7 @@ class people::bhiles {
   include wget
   include s3cmd
   include linkinus
+  include zsh_notifier
   include virtualbox
   include vagrant
   include docker
@@ -39,7 +40,6 @@ class people::bhiles {
   #include memcached::lib skipping bc of trouble on latest Mavericks
   include phantomjs::1_9_0
   include postgresql
-  #include zsh_notifier
   include macvim
   include ohmyzsh
 
