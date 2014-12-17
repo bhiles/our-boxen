@@ -42,11 +42,16 @@ class people::bhiles {
   include postgresql
   include macvim
   include ohmyzsh
+  include dotfiles
 
   # configurations
   include osx::global::disable_remote_control_ir_receiver
   include osx::dock::autohide
   include osx::dock::clear_dock
   include osx::dock::dim_hidden_apps
+
+  # only install these if desired
+  include qt
+  include wkhtmltopdf
 
 }
