@@ -25,10 +25,11 @@ class people::bhiles {
   include java
   include clojure
   include emacs
+  include dotfiles
+  include zsh_notifier
   include wget
   include s3cmd
   include linkinus
-  include zsh_notifier
   include virtualbox
   include vagrant
   include docker
@@ -42,7 +43,6 @@ class people::bhiles {
   include postgresql
   include macvim
   include ohmyzsh
-  include dotfiles
 
   # configurations
   include osx::global::disable_remote_control_ir_receiver
@@ -51,7 +51,7 @@ class people::bhiles {
   include osx::dock::dim_hidden_apps
 
   # only install these if desired
-  include qt
-  include wkhtmltopdf
+  #include qt
+  #include wkhtmltopdf
 
 }
