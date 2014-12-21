@@ -50,7 +50,5 @@ class people::bhiles {
   # only install these if desired
   #include macvim
   #include ohmyzsh
-  #include qt # required for wkhtmltopdf
-  #include wkhtmltopdf
   #include zeromq
 }
