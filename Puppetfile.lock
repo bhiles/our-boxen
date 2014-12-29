@@ -9,11 +9,6 @@ GITHUBTARBALL
     libreoffice (4.1.8)
 
 GITHUBTARBALL
-  remote: bhiles/puppet-maven
-  specs:
-    maven (1.0.13)
-
-GITHUBTARBALL
   remote: bhiles/puppet-s3cmd
   specs:
     s3cmd (0.0.1)
@@ -308,6 +303,11 @@ GITHUBTARBALL
   specs:
     module_data (0.0.3)
 
+GITHUBTARBALL
+  remote: rogeralmeida/puppet-maven
+  specs:
+    maven (1.0.15)
+
 DEPENDENCIES
   adium (= 1.4.0)
   adobe_reader (= 1.2.0)
@@ -338,7 +338,7 @@ DEPENDENCIES
   libtool (= 1.0.0)
   linkinus (= 1.0.3)
   macvim (= 1.0.0)
-  maven (= 1.0.13)
+  maven (= 1.0.15)
   memcached (= 2.0.0)
   module_data (= 0.0.3)
   nginx (= 1.4.4)
