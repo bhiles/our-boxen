@@ -29,12 +29,14 @@ class people::bhiles {
   include zsh_notifier
   include wget
   include s3cmd
+  include ansible
   include linkinus
   include virtualbox
   include vagrant
   include docker
   include dash
   include maven
+  include intellij
   include libtool
   include memcached
   #include memcached::lib skipping bc of trouble on latest Mavericks
