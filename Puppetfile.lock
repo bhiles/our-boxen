@@ -124,6 +124,11 @@ GITHUBTARBALL
     graphviz (1.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-hipchat
+  specs:
+    hipchat (1.1.3)
+
+GITHUBTARBALL
   remote: boxen/puppet-homebrew
   specs:
     homebrew (1.9.8)
@@ -341,6 +346,7 @@ DEPENDENCIES
   go (= 2.1.0)
   googlevoiceandvideoplugin (= 1.0.0)
   graphviz (= 1.0.0)
+  hipchat (= 1.1.3)
   homebrew (= 1.9.8)
   hub (= 1.3.0)
   inifile (= 1.1.1)

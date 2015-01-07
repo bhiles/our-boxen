@@ -19,6 +19,7 @@ class people::bhiles {
   include tiny_alarm
   include graphviz
   include libreoffice
+  include hipchat
 
   # developer applications
   include zsh
