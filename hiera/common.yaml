@@ -13,3 +13,4 @@ ruby::version::alias:
 # See https://github.com/boxen/puppet-java for docs
 java::update_version: '71'
 intellij::version: '13.1.6'
+jmeter::version: '3.00'
