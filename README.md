@@ -4,7 +4,7 @@ Dependency manager for your Mac.
 
 ### Pre-Boxen Setup
 
-Git
+**Git**
 
 ```
 # private/public keys
@@ -16,7 +16,7 @@ git config --global user.email bennetthiles@gmail.com
 git clone https://github.com/bhiles/bhiles.github.io (osx will ask for passphrase)
 ```
 
-Xcode
+**Xcode**
 
 ```
 xcode-select --install
@@ -48,7 +48,7 @@ If you run into trouble, take a look at the [original our-boxen docs](https://gi
 Boxen automates installing many applications, but I don't know Boxen 
 well enough to automate these steps, so for now, they are manual.
 
-Terminal 
+**Terminal**
 
 * startup
   * command: /opt/boxen/homebrew/bin/zsh
@@ -59,12 +59,12 @@ Terminal
     * "Default Window Settings" => "IR_Black"
   * keyboard: select 'Use option key as meta'
 
-Dropbox
+**Dropbox**
 
 * Configure for 1password
 * (Potentially) remove Documents directory, and put Dropbox directory in its place
 
-Chrome
+**Chrome**
 
 * Extensions
   * [1password extension](https://chrome.google.com/webstore/detail/1password-password-manage/aomjjhallfgjeglblehebfpbcfeobpgk/related?hl=en-US)
@@ -72,12 +72,12 @@ Chrome
   * Vimium
 * Install Silverlight
 
-Toggl key bindings
+**Toggl key bindings**
 
 * control+option+s (start/stop)
 * control+option+t (show app)
 
-Fluid apps
+**Fluid apps**
 
 * Trello 
   * [url](https://trello.com)
@@ -86,11 +86,11 @@ Fluid apps
   * [url](http://www.soundcloud.com)
   * [icon](https://www.flickr.com/photos/slippyd/8292777643/)
 
-Adium preferences
+**Adium preferences**
 
 * "Background chat notifications" presets
 
-Users & Groups - Login Items
+**Users & Groups - Login Items**
 
 * Dropbox
 * Divvy
@@ -98,25 +98,25 @@ Users & Groups - Login Items
 * Tinyalarm
 * Toggl
 
-Mission Control 
+**Mission Control**
 
 * removed all keyboard/mouse shortcuts
 * Hot Corners
   * upper right: screen saver
   * bottom right: desktop
 
-Divvy key bindings
+**Divvy key bindings**
 
 * control+option+d (start)
 * control+option+z (whole screen)
 * control+option+1 (left half-screen)
 * control+option+2 (right half-screen)
 
-Spotlight - Keyboard shortcut
+**Spotlight - Keyboard shortcut**
 
 * control + spacebar
 			
-Mail
+**Mail**
 
 * added email addresses for mail, contacts, calendar
 * default send from bennetthiles
@@ -124,7 +124,7 @@ Mail
   * default calendar = bennetthiles
   * include contacts from both both gmails				
 
-fabric
+**fabric**
 
 ```
 pip install fabric
