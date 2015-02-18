@@ -50,11 +50,85 @@ well enough to automate these steps, so for now, they are manual.
 
 Terminal 
 
-* startup:
+* startup
   * command: /opt/boxen/homebrew/bin/zsh
-* settings:
+* settings
   * add IR_Black profile
+    * [zip](https://github.com/jperkins/IR-Black/archive/master.zip)
+    * open IR_Black.terminal (you need to allow this application to be run)
+    * "Default Window Settings" => "IR_Black"
   * keyboard: select 'Use option key as meta'
+
+Dropbox
+
+* Configure for 1password
+* (Potentially) remove Documents directory, and put Dropbox directory in its place
+
+Chrome
+
+* Extensions
+  * [1password extension](https://chrome.google.com/webstore/detail/1password-password-manage/aomjjhallfgjeglblehebfpbcfeobpgk/related?hl=en-US)
+  * Chromecast
+  * Vimium
+* Install Silverlight
+
+Toggl key bindings
+
+* control+option+s (start/stop)
+* control+option+t (show app)
+
+Fluid apps
+
+* Trello 
+  * [url](https://trello.com)
+  * [icon](https://www.flickr.com/photos/nathos/6299670107/)
+* Soundcloud
+  * [url](http://www.soundcloud.com)
+  * [icon](https://www.flickr.com/photos/slippyd/8292777643/)
+
+Adium preferences
+
+* "Background chat notifications" presets
+
+Users & Groups - Login Items
+
+* Dropbox
+* Divvy
+* Caffeine
+* Tinyalarm
+* Toggl
+
+Mission Control 
+
+* removed all keyboard/mouse shortcuts
+* Hot Corners
+  * upper right: screen saver
+  * bottom right: desktop
+
+Divvy key bindings
+
+* control+option+d (start)
+* control+option+z (whole screen)
+* control+option+1 (left half-screen)
+* control+option+2 (right half-screen)
+
+Spotlight - Keyboard shortcut
+
+* control + spacebar
+			
+Mail
+
+* added email addresses for mail, contacts, calendar
+* default send from bennetthiles
+* iphone 
+  * default calendar = bennetthiles
+  * include contacts from both both gmails				
+
+fabric
+
+```
+pip install fabric
+```
 
 ### Resources
 
