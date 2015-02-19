@@ -2,25 +2,19 @@
 
 Dependency manager for your Mac.
 
+# Setup
+
 ### Pre-Boxen Setup
-
-**Git**
-
-```
-# private/public keys
-cd ~/.ssh && ssh-keygen
-cat id_rsa.pub | pbcopy              		
-# add public key to github (https://github.com/settings/ssh)
-git config --global user.name "bhiles"
-git config --global user.email bennetthiles@gmail.com
-git clone https://github.com/bhiles/bhiles.github.io (osx will ask for passphrase)
-```
 
 **Xcode**
 
 ```
-xcode-select --install
+# use git, to trigger the download Xcode modal
+git clone git@github.com:bhiles/our-boxen.git
+# a modal will ask you to install Xcode, do it!
 ```
+
+
 
 ### Boxen Setup
 
@@ -32,14 +26,25 @@ cd /opt/boxen/repo
 ./script/boxen
 ```
 
-It should run successfully, and should tell you to source a shell script
-in your environment.
-For users without a bash or zsh config or a `~/.profile` file,
-Boxen will create a shim for you that will work correctly.
+This should take a while, so grab some coffee!
 
-Once your shell is ready, open a new tab/window in your Terminal
-and you should be able to successfully run `boxen --env`.
-If that runs cleanly, you're in good shape.
+Some Git repos probably had trouble getting downloaded since I haven't setup SSH keys from this computer.
+
+```
+# private/public keys
+mkdir ~/.ssh && cd ~/.ssh && ssh-keygen
+open https://github.com/settings/ssh
+cat id_rsa.pub | pbcopy              		
+# add public key to github
+git config --global user.name "bhiles"
+git config --global user.email bennetthiles@gmail.com
+# use the SSH keys
+mkdir ~/src && cd ~/src
+git clone git@github.com:bhiles/our-boxen.git (osx will ask for passphrase)
+# restart boxen to install remaining pieces
+cd /opt/boxen/repo
+./script/boxen
+```
 
 If you run into trouble, take a look at the [original our-boxen docs](https://github.com/boxen/our-boxen).
 
@@ -47,6 +52,15 @@ If you run into trouble, take a look at the [original our-boxen docs](https://gi
 
 Boxen automates installing many applications, but I don't know Boxen 
 well enough to automate these steps, so for now, they are manual.
+
+**Dotfiles**
+
+Run install script
+
+```
+cd ~/.dotfiles
+./script/bootstrap
+```
 
 **Terminal**
 
@@ -68,9 +82,11 @@ well enough to automate these steps, so for now, they are manual.
 
 * Extensions
   * [1password extension](https://chrome.google.com/webstore/detail/1password-password-manage/aomjjhallfgjeglblehebfpbcfeobpgk/related?hl=en-US)
-  * Chromecast
-  * Vimium
-* Install Silverlight
+  * [Chromecast](https://chrome.google.com/webstore/detail/google-cast/boadgeojelhgndaghljhdicfkmllpafd?hl=en) (hide extension)
+  * [Vimium](https://chrome.google.com/webstore/detail/vimium/dbepggeogbaibhgnhhndojpepiihcmeb?hl=en) (hide extension)
+* Settings
+  * chrome://settings/ -> Passwords and forms -> Uncheck “Offer to save your web passwords” 
+  * Set as default browser
 
 **Toggl key bindings**
 
@@ -88,7 +104,11 @@ well enough to automate these steps, so for now, they are manual.
 
 **Adium preferences**
 
-* "Background chat notifications" presets
+* Events -> Event presets -> “Visual Notifications”
+
+**Spotlight - Keyboard shortcut**
+
+* control + spacebar
 
 **Users & Groups - Login Items**
 
@@ -105,24 +125,21 @@ well enough to automate these steps, so for now, they are manual.
   * upper right: screen saver
   * bottom right: desktop
 
+**Mail**
+
+* added email addresses for mail, contacts, calendar  
+
 **Divvy key bindings**
 
+* Security & Privacy -> Privacy -> Accessibility -> Add Divvy
 * control+option+d (start)
 * control+option+z (whole screen)
 * control+option+1 (left half-screen)
 * control+option+2 (right half-screen)
 
-**Spotlight - Keyboard shortcut**
+**Slack**
 
-* control + spacebar
-			
-**Mail**
-
-* added email addresses for mail, contacts, calendar
-* default send from bennetthiles
-* iphone 
-  * default calendar = bennetthiles
-  * include contacts from both both gmails				
+Install from App Store
 
 **fabric**
 
@@ -130,7 +147,7 @@ well enough to automate these steps, so for now, they are manual.
 pip install fabric
 ```
 
-### Resources
+# Resources
 
 * [Learn how to customize](https://github.com/boxen/our-boxen#customizing)
 * [FAQ](https://github.com/boxen/our-boxen/blob/master/docs/faq.md)
