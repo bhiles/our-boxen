@@ -31,7 +31,6 @@ class people::bhiles {
   include wget
   include s3cmd
   include ansible
-  include linkinus
   include virtualbox
   include vagrant
   include docker
@@ -43,7 +42,6 @@ class people::bhiles {
   #include memcached::lib skipping bc of trouble on latest Mavericks
   include phantomjs::1_9_0
   include postgresql
-  include jmeter
 
   # configurations
   include osx::global::disable_remote_control_ir_receiver
@@ -52,6 +50,8 @@ class people::bhiles {
   include osx::dock::dim_hidden_apps
 
   # only install these if desired
+  #include linkinus
+  #include jmeter
   #include macvim
   #include ohmyzsh
   #include zeromq
