@@ -7,7 +7,6 @@ class people::bhiles {
   include dropbox
   include textwrangler
   include adium
-  include quicksilver
   include divvy
   include skype
   include rdio
@@ -19,7 +18,7 @@ class people::bhiles {
   include tiny_alarm
   include graphviz
   include libreoffice
-  include hipchat
+  include linkinus
 
   # developer applications
   include zsh
@@ -48,11 +47,4 @@ class people::bhiles {
   include osx::dock::autohide
   include osx::dock::clear_dock
   include osx::dock::dim_hidden_apps
-
-  # only install these if desired
-  #include linkinus
-  #include jmeter
-  #include macvim
-  #include ohmyzsh
-  #include zeromq
 }
