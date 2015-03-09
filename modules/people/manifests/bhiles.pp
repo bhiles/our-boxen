@@ -41,6 +41,7 @@ class people::bhiles {
   #include memcached::lib skipping bc of trouble on latest Mavericks
   include phantomjs::1_9_0
   include postgresql
+  include mysql
 
   # configurations
   include osx::global::disable_remote_control_ir_receiver

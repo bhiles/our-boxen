@@ -164,6 +164,11 @@ GITHUBTARBALL
     memcached (2.0.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-mysql
+  specs:
+    mysql (1.99.91)
+
+GITHUBTARBALL
   remote: boxen/puppet-nginx
   specs:
     nginx (1.4.4)
@@ -338,6 +343,7 @@ DEPENDENCIES
   maven (= 1.0.15)
   memcached (= 2.0.0)
   module_data (= 0.0.3)
+  mysql (= 1.99.91)
   nginx (= 1.4.4)
   nodejs (= 4.0.0)
   onepassword (= 1.1.3)
