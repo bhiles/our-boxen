@@ -19,6 +19,7 @@ class people::bhiles {
   include graphviz
   include libreoffice
   include linkinus
+  
 
   # developer applications
   include zsh
@@ -48,4 +49,6 @@ class people::bhiles {
   include osx::dock::autohide
   include osx::dock::clear_dock
   include osx::dock::dim_hidden_apps
+  include karabiner
+  include karabiner::login_item
 }

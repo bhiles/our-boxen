@@ -149,6 +149,11 @@ GITHUBTARBALL
     java (1.8.0)
 
 GITHUBTARBALL
+  remote: boxen/puppet-karabiner
+  specs:
+    karabiner (1.0.6)
+
+GITHUBTARBALL
   remote: boxen/puppet-libtool
   specs:
     libtool (1.0.0)
@@ -337,6 +342,7 @@ DEPENDENCIES
   inifile (= 1.1.1)
   intellij (= 1.5.1)
   java (= 1.8.0)
+  karabiner (= 1.0.6)
   libreoffice (= 4.1.8)
   libtool (= 1.0.0)
   linkinus (= 1.0.3)
