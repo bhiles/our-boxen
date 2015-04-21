@@ -19,7 +19,6 @@ class people::bhiles {
   include graphviz
   include libreoffice
   include linkinus
-  
 
   # developer applications
   include zsh
