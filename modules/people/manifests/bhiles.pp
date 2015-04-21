@@ -42,6 +42,7 @@ class people::bhiles {
   include phantomjs::1_9_0
   include postgresql
   include mysql
+  nodejs::version { 'v0.12.2': }
 
   # configurations
   include osx::global::disable_remote_control_ir_receiver
