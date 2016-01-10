@@ -29,32 +29,32 @@ end
 # Includes many of our custom types and providers, as well as global
 # config. Required.
 
-github "boxen", "3.10.1"
+github "boxen", "3.11.1"
 
 # Support for default hiera data in modules
 
-github "module_data", "0.0.3", :repo => "ripienaar/puppet-module-data"
+github "module_data", "0.0.4", :repo => "ripienaar/puppet-module-data"
 
 # Core modules for a basic development environment. You can replace
 # some/most of these if you want, but it's not recommended.
 
-github "brewcask",    "0.0.4"
+github "brewcask",    "0.0.6"
 github "dnsmasq",     "2.0.1"
 github "foreman",     "1.2.0"
-github "gcc",         "2.2.0"
-github "git",         "2.7.1"
+github "gcc",         "3.0.2"
+github "git",         "2.7.92"
 github "go",          "2.1.0"
-github "homebrew",    "1.11.2"
-github "hub",         "1.4.0"
-github "inifile",     "1.1.1", :repo => "puppetlabs/puppetlabs-inifile"
-github "nginx",       "1.4.4"
-github "nodejs",      "4.0.0"
+github "homebrew",    "1.13.0"
+github "hub",         "1.4.1"
+github "inifile",     "1.4.1", :repo => "puppetlabs/puppetlabs-inifile"
+github "nginx",       "1.6.0"
+github "nodejs",      "5.0.5"
 github "openssl",     "1.0.0"
-github "phantomjs",   "2.3.0"
+github "phantomjs",   "3.0.0"
 github "pkgconfig",   "1.0.0"
-github "repository",  "2.3.0"
-github "ruby",        "8.1.7"
-github "stdlib",      "4.2.1", :repo => "puppetlabs/puppetlabs-stdlib"
+github "repository",  "2.4.1"
+github "ruby",        "8.5.3"
+github "stdlib",      "4.7.0", :repo => "puppetlabs/puppetlabs-stdlib"
 github "sudo",        "1.0.0"
 github "xquartz",     "1.2.1"
 
@@ -91,13 +91,12 @@ github "libreoffice",   "4.1.8", :repo => "bhiles/puppet-libreoffice"
 github "emacs",         "1.3.0"
 github "fluid",         "1.0.2"
 github "s3cmd",         "0.0.1", :repo => "bhiles/puppet-s3cmd"
-github "docker",        "0.7.0" 
+github "docker",        "0.7.0"
 github "dash",          "1.0.0"
 github "linkinus",      "1.0.3"
 github "maven",         "1.0.15", :repo => "rogeralmeida/puppet-maven"
 github "libtool",       "1.0.0"
 github "memcached",     "2.0.0"
-github "phantomjs",     "2.3.0"
 github "toggl",         "1.0.7"
 github "dotfiles",      "0.0.6", :repo => "bhiles/puppet-dotfiles"
 github "ansible",       "0.0.1", :repo => "gaahrdner/puppet-ansible"

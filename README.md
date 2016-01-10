@@ -34,7 +34,7 @@ Some Git repos probably had trouble getting downloaded since I haven't setup SSH
 # private/public keys
 mkdir ~/.ssh && cd ~/.ssh && ssh-keygen
 open https://github.com/settings/ssh
-cat id_rsa.pub | pbcopy              		
+cat id_rsa.pub | pbcopy
 # add public key to github
 git config --global user.name "bhiles"
 git config --global user.email bennetthiles@gmail.com
@@ -72,6 +72,110 @@ cd ~/.dotfiles
     * open IR_Black.terminal (you need to allow this application to be run)
     * "Default Window Settings" => "IR_Black"
   * keyboard: select 'Use option key as meta'
+
+Once your shell is ready, open a new tab/window in your Terminal
+and you should be able to successfully run `boxen --env`.
+If that runs cleanly, you're in good shape.
+
+## What You Get
+
+This template project provides the following by default:
+
+* Homebrew
+* Homebrew-Cask
+* Git
+* Hub
+* dnsmasq w/ .dev resolver for localhost
+* rbenv
+* Full Disk Encryption requirement
+* Node.js 0.8
+* Node.js 0.10
+* Node.js 0.12
+* Ruby 1.9.3
+* Ruby 2.0.0
+* Ruby 2.1.7
+* Ruby 2.2.3
+* ack
+* Findutils
+* GNU tar
+
+## Customizing
+
+You can always check out the number of existing modules we already
+provide as optional installs under the
+[boxen organization](https://github.com/boxen). These modules are all
+tested to be compatible with Boxen. Use the `Puppetfile` to pull them
+in dependencies automatically whenever `boxen` is run.
+
+### Including boxen modules from github (boxen/puppet-<name>)
+
+You must add the github information for your added Puppet module into your Puppetfile at the root of your
+boxen repo (ex. /path/to/your-boxen/Puppetfile):
+
+    # Core modules for a basic development environment. You can replace
+    # some/most of these if you want, but it's not recommended.
+
+    github "repository", "2.0.2"
+    github "dnsmasq",    "1.0.0"
+    github "gcc",        "1.0.0"
+    github "git",        "1.2.2"
+    github "homebrew",   "1.1.2"
+    github "hub",        "1.0.0"
+    github "inifile",    "0.9.0", :repo => "cprice404/puppetlabs-inifile"
+    github "nginx",      "1.4.0"
+    github "nodejs",     "2.2.0"
+    github "ruby",       "4.1.0"
+    github "stdlib",     "4.0.2", :repo => "puppetlabs/puppetlabs-stdlib"
+    github "sudo",       "1.0.0"
+
+    # Optional/custom modules. There are tons available at
+    # https://github.com/boxen.
+
+    github "java",     "1.6.0"
+
+In the above snippet of a customized Puppetfile, the bottom line
+includes the Java module from Github using the tag "1.6.0" from the github repository
+"[boxen/puppet-java/releases](https://github.com/boxen/puppet-java/releases)".  The function "github" is defined at the top of the Puppetfile
+and takes the name of the module, the version, and optional repo location:
+
+    def github(name, version, options = nil)
+      options ||= {}
+      options[:repo] ||= "boxen/puppet-#{name}"
+      mod name, version, :github_tarball => options[:repo]
+    end
+
+Now Puppet knows where to download the module from when you include it in your site.pp or mypersonal.pp file:
+
+    # include the java module referenced in my Puppetfile with the line
+    # github "java",     "1.6.0"
+    include java
+
+### Hiera
+
+Hiera is preferred mechanism to make changes to module defaults (e.g. default
+global ruby version, service ports, etc). This repository supplies a
+starting point for your Hiera configuration at `config/hiera.yml`, and an
+example data file at `hiera/common.yaml`. See those files for more details.
+
+The default `config/hiera.yml` is configured with a hierarchy that allows
+individuals to have their own hiera data file in
+`hiera/users/{github_login}.yaml` which augments and overrides
+site-wide values in `hiera/common.yaml`. This default is, as with most of the
+configuration in the example repo, a great starting point for many
+organisations, but is totally up to you. You might want to, for
+example, have a set of values that can't be overridden by adding a file to
+the top of the hierarchy, or to have values set on specific OS
+versions:
+
+```yaml
+# ...
+:hierarchy:
+  - "global-overrides.yaml"
+  - "users/%{::github_login}"
+  - "osx-%{::macosx_productversion_major}"
+  - common
+```
+>>>>>>> upstream/master
 
 **Dropbox**
 

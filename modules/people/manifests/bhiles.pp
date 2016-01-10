@@ -39,10 +39,8 @@ class people::bhiles {
   include libtool
   include memcached
   #include memcached::lib skipping bc of trouble on latest Mavericks
-  include phantomjs::1_9_0
   include postgresql
   include mysql
-  nodejs::version { 'v0.12.2': }
   include redis
 
   # configurations
